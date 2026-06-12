@@ -11,8 +11,8 @@ export const mockProducts = [
     categories: [{ id: 1, name: 'Daily Wellness', slug: 'daily-wellness' }],
     tags: [{ id: 1, name: 'Immunity' }, { id: 5, name: 'Hair Health' }, { id: 6, name: 'Skin' }],
     images: [
-      { id: 1, src: '/images/products/amla-powder.jpg', alt: 'Amla Powder Front' },
-      { id: 2, src: '/images/products/amla-powder-back.jpg', alt: 'Amla Powder Back' },
+      { id: 1, src: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80', alt: 'Amla Powder Front' },
+      { id: 2, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Amla Powder Back' },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g', '500g'] },
@@ -50,8 +50,8 @@ export const mockProducts = [
     categories: [{ id: 2, name: 'Functional Nutrition', slug: 'functional-nutrition' }],
     tags: [{ id: 2, name: 'Energy' }, { id: 1, name: 'Immunity' }, { id: 3, name: 'Nutrition' }],
     images: [
-      { id: 3, src: '/images/products/moringa-powder.jpg', alt: 'Moringa Powder' },
-      { id: 4, src: '/images/products/moringa-powder-back.jpg', alt: 'Moringa Powder Back' },
+      { id: 3, src: 'https://images.unsplash.com/photo-1611070973770-b1a672610042?auto=format&fit=crop&w=600&q=80', alt: 'Moringa Powder' },
+      { id: 4, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Moringa Powder Back' },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },
@@ -88,8 +88,8 @@ export const mockProducts = [
     categories: [{ id: 3, name: 'Beauty & Hair', slug: 'beauty-hair' }],
     tags: [{ id: 5, name: 'Hair Health' }, { id: 6, name: 'Skin' }],
     images: [
-      { id: 5, src: '/images/products/bhringraj-powder.jpg', alt: 'Bhringraj Powder' },
-      { id: 6, src: '/images/products/bhringraj-powder-back.jpg', alt: 'Bhringraj Powder Back' },
+      { id: 5, src: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80', alt: 'Bhringraj Powder' },
+      { id: 6, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Bhringraj Powder Back' },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },
@@ -126,8 +126,8 @@ export const mockProducts = [
     categories: [{ id: 2, name: 'Functional Nutrition', slug: 'functional-nutrition' }],
     tags: [{ id: 2, name: 'Energy' }, { id: 4, name: 'Detox' }, { id: 7, name: 'Digestion' }],
     images: [
-      { id: 7, src: '/images/products/beetroot-powder.jpg', alt: 'Beetroot Powder' },
-      { id: 8, src: '/images/products/beetroot-powder-back.jpg', alt: 'Beetroot Powder Back' },
+      { id: 7, src: 'https://images.unsplash.com/photo-1593113598332-cd59c5ac3f90?auto=format&fit=crop&w=600&q=80', alt: 'Beetroot Powder' },
+      { id: 8, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Beetroot Powder Back' },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },
@@ -152,85 +152,10 @@ export const mockProducts = [
     featured: true,
     on_sale: true,
   },
-  {
-    id: 5,
-    name: 'Ashwagandha Powder',
-    slug: 'ashwagandha-powder',
-    price: '399',
-    regular_price: '449',
-    sale_price: '399',
-    description: 'Premium Ashwagandha root powder, the adaptogenic herb revered in Ayurveda. Helps manage stress, supports energy levels, and promotes restful sleep. A daily essential for modern wellness.',
-    short_description: 'Adaptogenic herb for stress relief, energy, and restful sleep.',
-    categories: [{ id: 1, name: 'Daily Wellness', slug: 'daily-wellness' }],
-    tags: [{ id: 2, name: 'Energy' }, { id: 1, name: 'Immunity' }],
-    images: [
-      { id: 9, src: '/images/products/ashwagandha-powder.jpg', alt: 'Ashwagandha Powder' },
-    ],
-    attributes: [
-      { id: 1, name: 'Weight', options: ['100g', '250g'] },
-    ],
-    variations: [
-      { id: 501, name: '100g', weight: '100g', price: '229', regular_price: '259', sale_price: '229', in_stock: true },
-      { id: 502, name: '250g', weight: '250g', price: '399', regular_price: '449', sale_price: '399', in_stock: true },
-    ],
-    meta_data: {
-      highlights: ['Reduces Stress & Anxiety', 'Boosts Energy', 'Supports Sleep Quality', 'Enhances Vitality'],
-      ingredients: '100% Pure Ashwagandha (Withania Somnifera) Root Powder.',
-      nutritional_facts: 'Per 100g: Energy 245 kcal, Protein 3.9g, Carbohydrates 49.9g, Fiber 32.3g, Iron 3.3mg',
-      how_to_use: 'Mix 1 teaspoon (3-5g) with warm milk (golden milk) or water before bedtime. Can also be taken in the morning with honey.',
-      storage: 'Store in a cool, dry place.',
-      shelf_life: '18 months from the date of manufacture',
-      country_of_origin: 'India',
-    },
-    stock_status: 'instock',
-    stock_quantity: 95,
-    average_rating: '4.9',
-    rating_count: 142,
-    featured: false,
-    on_sale: true,
-  },
-  {
-    id: 6,
-    name: 'Turmeric Powder',
-    slug: 'turmeric-powder',
-    price: '199',
-    regular_price: '229',
-    sale_price: '199',
-    description: 'High-curcumin Turmeric powder, sourced from select farms. A golden powerhouse of anti-inflammatory and antioxidant properties. Essential for daily wellness and immunity.',
-    short_description: 'High-curcumin turmeric for immunity and anti-inflammatory support.',
-    categories: [{ id: 1, name: 'Daily Wellness', slug: 'daily-wellness' }],
-    tags: [{ id: 1, name: 'Immunity' }, { id: 7, name: 'Digestion' }],
-    images: [
-      { id: 10, src: '/images/products/turmeric-powder.jpg', alt: 'Turmeric Powder' },
-    ],
-    attributes: [
-      { id: 1, name: 'Weight', options: ['100g', '250g', '500g'] },
-    ],
-    variations: [
-      { id: 601, name: '100g', weight: '100g', price: '99', regular_price: '119', sale_price: '99', in_stock: true },
-      { id: 602, name: '250g', weight: '250g', price: '199', regular_price: '229', sale_price: '199', in_stock: true },
-      { id: 603, name: '500g', weight: '500g', price: '349', regular_price: '399', sale_price: '349', in_stock: true },
-    ],
-    meta_data: {
-      highlights: ['High Curcumin Content', 'Anti-inflammatory', 'Boosts Immunity', 'Aids Digestion'],
-      ingredients: '100% Pure Turmeric (Curcuma Longa) Powder. No added colors or fillers.',
-      nutritional_facts: 'Per 100g: Energy 312 kcal, Protein 9.7g, Carbohydrates 67.1g, Fiber 22.7g, Iron 55mg, Curcumin 3-5%',
-      how_to_use: 'Add to golden milk, curries, smoothies, or warm water with honey. For golden milk: mix ½ tsp with warm milk, a pinch of black pepper, and honey.',
-      storage: 'Store in a cool, dry place away from light.',
-      shelf_life: '24 months from the date of manufacture',
-      country_of_origin: 'India',
-    },
-    stock_status: 'instock',
-    stock_quantity: 300,
-    average_rating: '4.7',
-    rating_count: 198,
-    featured: false,
-    on_sale: true,
-  },
 ];
 
 export const mockCategories = [
-  { id: 1, name: 'Daily Wellness', slug: 'daily-wellness', count: 3, description: 'Everyday powders for holistic health and well-being.' },
+  { id: 1, name: 'Daily Wellness', slug: 'daily-wellness', count: 1, description: 'Everyday powders for holistic health and well-being.' },
   { id: 2, name: 'Functional Nutrition', slug: 'functional-nutrition', count: 2, description: 'Targeted nutrition for specific health goals.' },
   { id: 3, name: 'Beauty & Hair', slug: 'beauty-hair', count: 1, description: 'Natural care for radiant skin and strong hair.' },
 ];
@@ -267,7 +192,7 @@ export const mockTestimonials = [
     name: 'Ananya Reddy',
     location: 'Mangaluru, Karnataka',
     rating: 5,
-    text: "What I love about Tridamya is their commitment to purity. No additives, no fillers — just pure, natural goodness. The Ashwagandha powder has helped me manage stress so much better. Highly recommend!",
+    text: "What I love about Tridamya is their commitment to purity. No additives, no fillers — just pure, natural goodness. The Bhringraj powder has worked wonders for my hair fall and scalp health. Highly recommend!",
     initials: 'AR',
   },
   {
@@ -285,7 +210,7 @@ export const mockBlogPosts = [
     id: 1,
     title: '5 Ayurvedic Superfoods You Should Include in Your Daily Diet',
     slug: '5-ayurvedic-superfoods-daily-diet',
-    excerpt: 'Discover the ancient Ayurvedic superfoods that modern science is now validating. From Amla to Ashwagandha, learn how these traditional ingredients can transform your daily wellness routine.',
+    excerpt: 'Discover the ancient Ayurvedic superfoods that modern science is now validating. From Amla to Moringa, learn how these traditional ingredients can transform your daily wellness routine.',
     category: 'Health Tips',
     date: '2026-06-01',
     read_time: '5 min read',
