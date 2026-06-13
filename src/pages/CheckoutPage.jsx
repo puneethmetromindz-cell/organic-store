@@ -72,19 +72,40 @@ export default function CheckoutPage() {
       return;
     }
 
+    // Capture order details before clearing the cart
+    const orderDetails = {
+      orderId: `TRD-${new Date().getFullYear()}-${Math.floor(100000 + Math.random() * 900000)}`,
+      date: new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' }),
+      items: [...items],
+      subtotal,
+      discountAmount,
+      totalAmount,
+      paymentMethod,
+      shippingAddress: {
+        firstName,
+        lastName,
+        address,
+        apartment,
+        city,
+        pinCode,
+        phone,
+        email
+      }
+    };
+
     if (paymentMethod === 'online') {
       // Simulate Razorpay Secure Payment Portal launch
       setIsProcessing(true);
       setTimeout(() => {
         setIsProcessing(false);
         clearCart();
-        navigate('/order-success');
+        navigate('/order-success', { state: { orderDetails } });
         toast.success('Payment completed successfully via mock Razorpay!');
       }, 3000);
     } else {
       // COD Order Placement
       clearCart();
-      navigate('/order-success');
+      navigate('/order-success', { state: { orderDetails } });
       toast.success('Order placed successfully! Cash on Delivery confirmed.');
     }
   };
@@ -394,7 +415,7 @@ export default function CheckoutPage() {
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        justify-content: 'space-between',
+                        justifyContent: 'space-between',
                         padding: '8px 12px',
                         background: 'var(--color-sage)',
                         border: '1.5px solid var(--color-primary)',

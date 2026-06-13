@@ -206,7 +206,7 @@ export default function AboutPage() {
                     color: 'var(--color-primary)',
                     display: 'flex',
                     alignItems: 'center',
-                    justify-content: 'center',
+                    justifyContent: 'center',
                     marginBottom: '16px'
                   }}
                 >
