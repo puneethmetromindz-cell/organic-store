@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import dailyWellness from '../../assets/home/daily-wellness.webp';
+import functionalNutrition from '../../assets/home/functional-nutrition.webp';
+import beautyHair from '../../assets/home/beauty-hair.webp';
+
 
 const categories = [
   {
@@ -7,7 +11,7 @@ const categories = [
     name: 'Daily Wellness',
     slug: 'daily-wellness',
     description: 'Everyday powders for holistic health, vitality, and well-being.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
+    image: dailyWellness,
     color: 'var(--color-sage)',
   },
   {
@@ -15,7 +19,7 @@ const categories = [
     name: 'Functional Nutrition',
     slug: 'functional-nutrition',
     description: 'Targeted superfoods for energy, detoxification, and strength.',
-    image: 'https://images.unsplash.com/photo-1611070973770-b1a672610042?auto=format&fit=crop&w=800&q=80',
+    image: functionalNutrition,
     color: 'var(--color-cream-dark)',
   },
   {
@@ -23,7 +27,7 @@ const categories = [
     name: 'Beauty & Hair',
     slug: 'beauty-hair',
     description: 'Ayurvedic remedies for lustrous hair and naturally radiant skin.',
-    image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80',
+    image: beautyHair,
     color: 'var(--color-sage-dark)',
   },
 ];

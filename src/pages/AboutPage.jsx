@@ -1,6 +1,9 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Leaf, Heart, Eye, Award, Globe } from 'lucide-react';
+import aboutStoryImg from '../assets/about/about-story-img.webp';
+import aboutHeritageImg from '../assets/about/heritage.webp';
+import aboutBannerImg from '../assets/about/Indian-farm-about-background.webp';
 
 export default function AboutPage() {
   const values = [
@@ -36,9 +39,9 @@ export default function AboutPage() {
       {/* About Page Hero Section */}
       <section className="about-hero">
         <div className="about-hero__bg">
-          <img 
-            src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1440&q=80" 
-            alt="Indian farm background" 
+          <img
+            src={aboutBannerImg}
+            alt="Indian farm background"
           />
         </div>
         <div className="container" style={{ zIndex: 1 }}>
@@ -67,7 +70,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <div className="about-story-grid">
-            
+
             {/* Story text */}
             <div>
               <span className="section-header__eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>Who We Are</span>
@@ -75,7 +78,7 @@ export default function AboutPage() {
                 The Tridamya Journey
               </h2>
               <p style={{ lineHeight: '1.7', color: 'var(--color-gray-600)', marginBottom: '16px' }}>
-                Tridamya was founded on a simple realization: while modern life moves at a lightning pace, our bodies still crave the slow, natural nourishment that ancient traditions perfected. 
+                Tridamya was founded on a simple realization: while modern life moves at a lightning pace, our bodies still crave the slow, natural nourishment that ancient traditions perfected.
               </p>
               <p style={{ lineHeight: '1.7', color: 'var(--color-gray-600)', marginBottom: '16px' }}>
                 We noticed that the market was flooded with wellness supplements filled with starch carriers, anti-caking agents, synthetic stabilizers, and suspicious flavorings. We decided to take a different path — returning to single-ingredient botanicals in their absolute, raw, pure powder form.
@@ -87,9 +90,9 @@ export default function AboutPage() {
 
             {/* Story Image wrapper */}
             <div className="about-story-img">
-              <img 
-                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" 
-                alt="Harvested organic herbs" 
+              <img
+                src={aboutStoryImg}
+                alt="Harvested organic herbs"
               />
             </div>
 
@@ -101,7 +104,7 @@ export default function AboutPage() {
       <section className="section section--cream" style={{ borderTop: '1px solid var(--color-cream-dark)', borderBottom: '1px solid var(--color-cream-dark)' }}>
         <div className="container">
           <div className="about-story-grid" style={{ direction: 'rtl' }}>
-            
+
             {/* Roots text */}
             <div style={{ direction: 'ltr', textAlign: 'left' }}>
               <span className="section-header__eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>Karnataka Roots</span>
@@ -114,7 +117,7 @@ export default function AboutPage() {
               <p style={{ lineHeight: '1.7', color: 'var(--color-gray-600)', marginBottom: '24px' }}>
                 By establishing our processing base directly in Mysuru, we reduce the transport carbon footprint and maintain a direct hands-on relationship with agricultural collectives. We support local growers by purchasing crops at higher-than-average fair trade prices.
               </p>
-              <div 
+              <div
                 style={{
                   borderLeft: '4px solid var(--color-primary)',
                   paddingLeft: '16px',
@@ -129,9 +132,9 @@ export default function AboutPage() {
 
             {/* Roots image */}
             <div className="about-story-img" style={{ direction: 'ltr' }}>
-              <img 
-                src="https://images.unsplash.com/photo-1611070973770-b1a672610042?auto=format&fit=crop&w=800&q=80" 
-                alt="Mysore Moringa Farm" 
+              <img
+                src={aboutHeritageImg}
+                alt="Mysore Moringa Farm"
               />
             </div>
 
@@ -143,7 +146,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px' }}>
-            
+
             {/* Mission panel */}
             <div className="checkout-section" style={{ marginBottom: 0, border: '1.5px solid var(--color-gray-200)' }}>
               <div style={{ display: 'flex', gap: '16px', alignItems: 'center', marginBottom: '16px' }}>
@@ -185,8 +188,8 @@ export default function AboutPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px', marginTop: '40px' }}>
             {values.map((v, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 style={{
                   background: 'var(--color-white)',
                   border: '1.5px solid var(--color-gray-200)',
@@ -197,7 +200,7 @@ export default function AboutPage() {
                 onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
                 onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
               >
-                <div 
+                <div
                   style={{
                     width: '48px',
                     height: '48px',

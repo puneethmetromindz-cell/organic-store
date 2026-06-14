@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Youtube, Phone, Mail, MapPin } from 'lucide-react';
+import footerLogo from '../../assets/footer-logo.webp';
 
 export default function Footer() {
   return (
@@ -8,11 +9,30 @@ export default function Footer() {
         <div className="footer__grid">
           {/* Brand Column */}
           <div>
-            <div className="footer__brand-name">TRIDAMYA</div>
-            <div className="footer__brand-tagline">Ancient Wisdom | Modern Purity</div>
+            <div className="footer__brand">
+
+              <img
+                src={footerLogo}
+                alt="TRIDAMYA"
+                className="footer__brand-logo"
+              />
+
+              <div>
+
+                <div className="footer__brand-name">
+                  TRIDAMYA
+                </div>
+
+                <div className="footer__brand-tagline">
+                  Ancient Wisdom | Modern Purity
+                </div>
+
+              </div>
+
+            </div>
+
             <p className="footer__brand-desc">
-              Nourish your body naturally with thoughtfully crafted wellness powders
-              inspired by tradition and crafted for modern living.
+              Nourish your body naturally with thoughtfully crafted wellness powders inspired by tradition and crafted for modern living.
             </p>
             <div className="footer__social">
               <a

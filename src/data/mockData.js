@@ -1,3 +1,18 @@
+
+import amlaFront from '../assets/products/amla-powder-front.webp';
+import amlaBack from '../assets/products/amla-powder-back.webp';
+
+import mornigaFront from '../assets/products/morniga-powder-front.webp';
+import mornigaBack from '../assets/products/morniga-powder-back.webp';
+
+import bringrajFront from '../assets/products/bringraj-powder-front.webp';
+import bringrajBack from '../assets/products/bringraj-powder-back.webp';
+
+import beetrootFront from '../assets/products/beetroot-powder-front.webp';
+import beetrootBack from '../assets/products/beetroot-powder-back.webp';
+
+
+
 export const mockProducts = [
   {
     id: 1,
@@ -11,8 +26,8 @@ export const mockProducts = [
     categories: [{ id: 1, name: 'Daily Wellness', slug: 'daily-wellness' }],
     tags: [{ id: 1, name: 'Immunity' }, { id: 5, name: 'Hair Health' }, { id: 6, name: 'Skin' }],
     images: [
-      { id: 1, src: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80', alt: 'Amla Powder Front' },
-      { id: 2, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Amla Powder Back' },
+      { id: 1, src: amlaFront },
+      { id: 2, src: amlaBack },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g', '500g'] },
@@ -40,18 +55,18 @@ export const mockProducts = [
   },
   {
     id: 2,
-    name: 'Moringa Powder',
-    slug: 'moringa-powder',
+    name: 'Morniga Powder',
+    slug: 'morniga-powder',
     price: '349',
     regular_price: '399',
     sale_price: '349',
-    description: 'Nutrient-dense Moringa leaf powder, the superfood of superfoods. Packed with vitamins, minerals, and antioxidants. Supports daily nutrition, energy levels, and overall wellness.',
+    description: 'Nutrient-dense Morniga leaf powder, the superfood of superfoods. Packed with vitamins, minerals, and antioxidants. Supports daily nutrition, energy levels, and overall wellness.',
     short_description: 'Superfood packed with vitamins & minerals for daily nutrition and energy.',
     categories: [{ id: 2, name: 'Functional Nutrition', slug: 'functional-nutrition' }],
     tags: [{ id: 2, name: 'Energy' }, { id: 1, name: 'Immunity' }, { id: 3, name: 'Nutrition' }],
     images: [
-      { id: 3, src: 'https://images.unsplash.com/photo-1611070973770-b1a672610042?auto=format&fit=crop&w=600&q=80', alt: 'Moringa Powder' },
-      { id: 4, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Moringa Powder Back' },
+      { id: 3, src: mornigaFront },
+      { id: 4, src: mornigaBack },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },
@@ -78,18 +93,18 @@ export const mockProducts = [
   },
   {
     id: 3,
-    name: 'Bhringraj Powder',
-    slug: 'bhringraj-powder',
+    name: 'Bringraj Powder',
+    slug: 'bringraj-powder',
     price: '279',
     regular_price: '329',
     sale_price: '279',
-    description: 'Traditional Bhringraj powder, known as the "King of Herbs" for hair. Promotes hair growth, reduces hair fall, and nourishes scalp health. A time-tested Ayurvedic remedy for lustrous, strong hair.',
+    description: 'Traditional Bringraj powder, known as the "King of Herbs" for hair. Promotes hair growth, reduces hair fall, and nourishes scalp health. A time-tested Ayurvedic remedy for lustrous, strong hair.',
     short_description: 'King of herbs for hair — promotes growth and reduces hair fall.',
     categories: [{ id: 3, name: 'Beauty & Hair', slug: 'beauty-hair' }],
     tags: [{ id: 5, name: 'Hair Health' }, { id: 6, name: 'Skin' }],
     images: [
-      { id: 5, src: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=600&q=80', alt: 'Bhringraj Powder' },
-      { id: 6, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Bhringraj Powder Back' },
+      { id: 5, src: bringrajFront },
+      { id: 6, src: bringrajBack },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },
@@ -126,8 +141,8 @@ export const mockProducts = [
     categories: [{ id: 2, name: 'Functional Nutrition', slug: 'functional-nutrition' }],
     tags: [{ id: 2, name: 'Energy' }, { id: 4, name: 'Detox' }, { id: 7, name: 'Digestion' }],
     images: [
-      { id: 7, src: 'https://images.unsplash.com/photo-1593113598332-cd59c5ac3f90?auto=format&fit=crop&w=600&q=80', alt: 'Beetroot Powder' },
-      { id: 8, src: 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80', alt: 'Beetroot Powder Back' },
+      { id: 7, src: beetrootFront },
+      { id: 8, src: beetrootBack },
     ],
     attributes: [
       { id: 1, name: 'Weight', options: ['100g', '250g'] },

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import heroImg from '../../assets/hero.png';
+import heroImg from '../../assets/home/hero.webp';
 
 export default function Hero() {
   const containerVariants = {
@@ -41,15 +41,15 @@ export default function Hero() {
           <motion.span className="hero__eyebrow" variants={itemVariants}>
             Ancient Wisdom &bull; Modern Purity
           </motion.span>
-          
+
           <motion.h1 className="hero__title" variants={itemVariants}>
             Nourish Your Body Naturally
           </motion.h1>
-          
+
           <motion.p className="hero__subtitle" variants={itemVariants}>
             Crafted with traditional Ayurvedic wisdom and modern purity. Experience 100% natural, additive-free wellness powders curated for contemporary lifestyle.
           </motion.p>
-          
+
           <motion.div className="hero__actions" variants={itemVariants}>
             <Link to="/shop" className="btn btn--primary btn--lg">
               Explore Shop

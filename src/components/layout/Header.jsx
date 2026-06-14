@@ -4,6 +4,7 @@ import { Search, User, Heart, ShoppingBag, Menu, ChevronDown } from 'lucide-reac
 import useCartStore from '../../store/cartStore';
 import useWishlistStore from '../../store/wishlistStore';
 import useUIStore from '../../store/uiStore';
+import treeLogo from '../../assets/tree-logo.webp';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -42,10 +43,25 @@ export default function Header() {
       <div className="header__inner">
         {/* Logo */}
         <Link to="/" className="header__logo" aria-label="TRIDAMYA Home">
-          <div>
-            <div className="header__logo-text">TRIDAMYA</div>
-            <div className="header__logo-tagline">Ancient Wisdom | Modern Purity</div>
+
+          <img
+            src={treeLogo}
+            alt="TRIDAMYA"
+            className="header__logo-icon"
+          />
+
+          <div className="header__logo-content">
+
+            <div className="header__logo-text">
+              TRIDAMYA
+            </div>
+
+            <div className="header__logo-tagline">
+              Ancient Wisdom | Modern Purity
+            </div>
+
           </div>
+
         </Link>
 
         {/* Desktop Navigation */}

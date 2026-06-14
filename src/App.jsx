@@ -60,12 +60,12 @@ export default function App() {
           },
           success: {
             style: {
-              background: '#2E6B2D',
+              background: '#1F5E2C',
               color: '#fff',
             },
             iconTheme: {
               primary: '#fff',
-              secondary: '#2E6B2D',
+              secondary: '#1F5E2C',
             },
           },
         }}
