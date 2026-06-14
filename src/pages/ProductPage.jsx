@@ -593,12 +593,20 @@ export default function ProductPage() {
                 <div className="fbt-items">
                   {/* Current Product display item */}
                   <div className="fbt-item-card">
+                    <input 
+                      type="checkbox" 
+                      checked={true}
+                      readOnly
+                      className="filter-checkbox"
+                      style={{ marginRight: '8px', cursor: 'default', pointerEvents: 'none' }}
+                      aria-label="Current product (required)"
+                    />
                     <img 
                       src={product.images?.[0]?.src} 
                       alt={product.name} 
                       className="fbt-item-card__img"
                     />
-                    <div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--color-primary)', fontWeight: 600 }}>This Item</div>
                       <h4 style={{ fontSize: '15px', fontWeight: 600, fontFamily: 'var(--font-body)' }}>{product.name}</h4>
                       <span style={{ fontWeight: 700 }}>₹{displayPrice}</span>
@@ -613,7 +621,7 @@ export default function ProductPage() {
                     const checked = fbtCheckedIds.includes(partner.id);
                     const pPrice = partner.sale_price || partner.price;
                     return (
-                      <div key={partner.id} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                      <div key={partner.id} style={{ display: 'contents' }}>
                         <div className="fbt-item-card" style={{ opacity: checked ? 1 : 0.6 }}>
                           <input 
                             type="checkbox" 
@@ -628,7 +636,8 @@ export default function ProductPage() {
                             alt={partner.name} 
                             className="fbt-item-card__img"
                           />
-                          <div>
+                          <div style={{ flex: 1, minWidth: 0 }}>
+                            <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--color-primary)', fontWeight: 600, visibility: 'hidden' }}>This Item</div>
                             <h4 style={{ fontSize: '15px', fontWeight: 600, fontFamily: 'var(--font-body)' }}>
                               <Link to={`/product/${partner.slug}`} style={{ hoverColor: 'var(--color-primary)' }}>{partner.name}</Link>
                             </h4>
